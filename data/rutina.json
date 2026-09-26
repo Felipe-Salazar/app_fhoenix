@@ -1,0 +1,54 @@
+{
+    "rutina": [
+        {
+            "id": "empuje",
+            "area": "Empuje",
+            "objetivos": ["Pecho", "Hombros", "Tríceps"],
+            "modo": "solo_uno",
+            "ejercicios": [
+                {"id": "empuje_0", "nombre": "Flexiones en la pared o inclinadas", "series": 3, "min": 8, "max": 12, "unidad": "reps"},
+                {"id": "empuje_1", "nombre": "Flexiones apoyando rodillas", "series": 3, "min": 8, "max": 12, "unidad": "reps"},
+                {"id": "empuje_2", "nombre": "Flexiones completas estrictas", "series": 3, "min": 6, "max": 10, "unidad": "reps"},
+                {"id": "empuje_avance", "nombre": "Flexiones diamante o declinadas", "series": 3, "min": 6, "max": 10, "unidad": "reps"}
+            ]
+        },
+
+        {
+            "id": "tiron",
+            "area": "Tirón",
+            "objetivos": ["Espalda", "Bíceps"],
+            "modo": "solo_uno",
+            "ejercicios": [
+                {"id": "tiron_0", "nombre": "Remo australiano con mesa muy inclinada", "series": 3, "min": 8, "max": 12, "unidad": "reps"},
+                {"id": "tiron_1", "nombre": "Remo australiano más horizontal", "series": 3, "min": 8, "max": 12, "unidad": "reps"},
+                {"id": "tiron_2", "nombre": "Negativas de dominadas, bajada en 3-5 s", "series": 3, "min": 5, "max": 8, "unidad": "reps"},
+                {"id": "tiron_avance", "nombre": "Dominadas estrictas completas", "series": 3, "min": 3, "max": 6, "unidad": "reps"}
+            ]
+        },
+
+        {
+            "id": "piernas",
+            "area": "Piernas y Glúteos",
+            "objetivos": ["Cuádriceps", "Isquios"],
+            "modo": "solo_uno",
+            "ejercicios": [
+                {"id": "pierna_0", "nombre": "Sentadillas asistidas o parciales", "series": 3, "min": 10, "max": 15, "unidad": "reps"},
+                {"id": "pierna_1", "nombre": "Sentadillas corporales completas profundas", "series": 3, "min": 12, "max": 15, "unidad": "reps"},
+                {"id": "pierna_2", "nombre": "Zancadas estáticas o caminando", "series": 3, "min": 8, "max": 12, "unidad": "reps", "por_pierna": true},
+                {"id": "pierna_avance", "nombre": "Sentadillas a una pierna asistidas", "series": 3, "min": 6, "max": 10, "unidad": "reps", "por_pierna": true}
+            ]
+        },
+
+        {
+            "id": "core",
+            "area": "Core y Abdomen",
+            "objetivos": ["Zona media"],
+            "modo": "todos",
+            "ejercicios": [
+                {"id": "core_1", "nombre": "Plancha frontal isométrica", "series": 3, "min": 20, "max": 40, "unidad": "segundos"},
+                {"id": "core_2", "nombre": "Elevaciones de pierna tumbado / Crunch controlado", "series": 3, "min": 10, "max": 15, "unidad": "reps"},
+                {"id": "core_3", "nombre": "Puente de glúteos (Activación Posterior)", "series": 3, "min": 12, "max": 15, "unidad": "reps", "opcional": true}
+            ] 
+        }
+    ]
+}
