@@ -1,0 +1,67 @@
+:root {
+    --fondo: #17171B;
+    --superficie: #232329;
+    --borde: #3A3A41;
+    --texto: #F3F1EC;
+    --texto-suave: #B9B5AD;
+    --acento: #E8784A;
+    --fuente-titulo: "Barlow Condensed", "Arial Narrow", sans-serif;
+    --fuente-texto: "DM Sans", system-ui, sans-serif;
+}
+
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    background: var(--fondo);
+    color: var(--texto);
+    font-family: var(--fuente-texto);
+}
+
+.app {
+    min-height: 100dvh;
+    max-width: 480px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.pantalla {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 28px 32px;
+}
+
+.hoy-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hoy-centro {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px
+}
+
+.texto-suave { 
+    color: var(--texto-suave);
+    margin: 0;
+}
+
+.acento {
+    color: var(--acento);
+}
+
+.hoy-titulo {
+    font-size: 74px;
+    font-weight: 700;
+    text-transform:uppercase;
+    line-height: 0.95;
+    margin: 0;
+    font-family: var(--fuente-titulo);
+}
+

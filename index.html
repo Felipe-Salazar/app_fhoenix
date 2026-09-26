@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="17171B">
+    <title>Fhoenix</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="app">
+
+        <section class="pantalla" id="pantalla-hoy">
+            
+            <header class="hoy-top">
+                <span class="texto-suave" id="hoy-fecha">Lunes · Semana 1 de 12</span>
+                <button class="btn-icono" aria-label="Ajustes">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                        <path d="M4 6h9M17 6h3M4 12h3M11 12h9M4 18h11M19 18h1"/>
+                        <circle cx="15" cy="6" r="2"/><circle cx="9" cy="12" r="2"/><circle cx="17" cy="18" r="2"/>
+                    </svg>
+                </button>
+            </header>
+
+            <div class="hoy-centro">
+                <h1 class="hoy-titulo">Hoy toca<br>entrenar,<br><span class="acento" id="hoy-nombre">Felipe</span></h1>
+                <p class="texto-suave">Full body · 4 rondas · ~45 min</p>
+            </div>
+
+            <button class="btn-empezar">Empezar sesión</button>
+
+        </section>
+
+        <nav class="nav">
+            <button class="nav-item-activo">Hoy</button>
+            <button class="nav-item">Progreso</button>
+            <button class="nav-item">Comida</button>
+            <button class="nav-item">Medidas</button>
+        </nav>
+
+    </div>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
