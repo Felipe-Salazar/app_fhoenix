@@ -33,6 +33,19 @@ body {
     padding: 40px 28px 32px;
 }
 
+button {
+    font-family: inherit;
+}
+
+.btn-icono {
+    height: 44px;
+    width: 44px;
+    background: var(--superficie);
+    border-radius: 999px;
+    border: 1px solid var(--borde);
+    color: var(--texto);
+}
+
 .hoy-top {
     display: flex;
     justify-content: space-between;
@@ -57,7 +70,7 @@ body {
 }
 
 .hoy-titulo {
-    font-size: 74px;
+    font-size: 76px;
     font-weight: 700;
     text-transform:uppercase;
     line-height: 0.95;
@@ -65,3 +78,73 @@ body {
     font-family: var(--fuente-titulo);
 }
 
+.btn-empezar {
+    height: 72px;
+    background: var(--acento);
+    color: var(--fondo);
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 999px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px 0 28px;
+}
+
+.btn-flecha {
+    width: 52px;
+    height: 52px;
+    border-radius: 999px;
+    background: var(--fondo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-flecha svg {
+    width: 22px;
+    height: 22px;
+    fill: none;
+    stroke: var(--acento);
+    stroke-width: 2.4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.nav {
+    height: 76px;
+    background: var(--superficie);
+    border-top: 1px solid var(--borde);
+    display: flex;
+    justify-content: space-around;
+    padding: 0 8px 0 8px;
+}
+
+.nav-item {
+    min-width: 64px;
+    background: none;
+    color: var(--texto-suave);
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.nav-item.activo {
+    color: var(--acento);
+    font-weight: 600;
+}
+
+.nav-icon {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    margin-bottom: 4px;
+}
