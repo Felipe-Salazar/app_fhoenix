@@ -12,12 +12,12 @@
 
 <body>
     <div class="app">
-
+        <!-- Pantalla Hoy -->
         <section class="pantalla" id="pantalla-hoy">
             
             <header class="hoy-top">
-                <span class="texto-suave" id="hoy-fecha">Lunes · Semana 1 de 12</span>
-                <button class="btn-icono" aria-label="Ajustes">
+                <span class="texto-suave" id="hoy-fecha"></span>
+                <button class="btn-icono" id="btn-ajustes" aria-label="Ajustes">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
                         <path d="M4 6h9M17 6h3M4 12h3M11 12h9M4 18h11M19 18h1"/>
                         <circle cx="15" cy="6" r="2"/><circle cx="9" cy="12" r="2"/><circle cx="17" cy="18" r="2"/>
@@ -26,7 +26,7 @@
             </header>
 
             <div class="hoy-centro">
-                <h1 class="hoy-titulo">Hoy toca<br>entrenar,<br><span class="acento" id="hoy-nombre">Felipe</span></h1>
+                <h1 class="hoy-titulo">Hoy toca<br>entrenar,<br><span class="acento" id="hoy-nombre"></span></h1>
                 <p class="texto-suave">Full body · 4 rondas · ~45 min</p>
             </div>
 
@@ -38,6 +38,27 @@
             </button>
 
         </section>
+
+        <!-- Pantalla Ajustes -->
+        <section class="pantalla" id="pantalla-ajustes" hidden>
+            <header class="ajustes-top">
+                <button class="btn-icono" id="btn-volver" aria-label="Volver">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>
+                </button>
+                <h1 class="titulo-pantalla">Ajustes</h1>
+            </header>
+
+            <div class="grupo">
+                <span class="grupo-titulo">PERFIL</span>
+                <div class="tarjeta">
+                    <label class="fila">
+                        Nombre
+                        <input class="campo" id="campo-nombre" type="text" placeholder="Héroe">
+                    </label>
+                </div>
+            </div>
+        </section>
+
 
         <nav class="nav">
             <button class="nav-item activo">

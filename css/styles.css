@@ -9,6 +9,7 @@
     --fuente-texto: "DM Sans", system-ui, sans-serif;
 }
 
+[hidden] { display: none !important; }
 * {box-sizing: border-box;}
 
 body {
@@ -46,6 +47,8 @@ button {
     color: var(--texto);
 }
 
+
+/* Pantalla Hoy */
 .hoy-top {
     display: flex;
     justify-content: space-between;
@@ -112,6 +115,67 @@ button {
     stroke-linejoin: round;
 }
 
+
+/* Pantalla Ajustes */
+#pantalla-ajustes {
+    gap: 20px;
+}
+
+.ajustes-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.titulo-pantalla {
+    font-family: var(--fuente-titulo);
+    font-size: 36px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.grupo-titulo {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: var(--texto-suave);
+}
+
+.tarjeta {
+    background: var(--superficie);
+    border: 1px solid var(--borde);
+    border-radius: 16px;
+}
+
+.fila {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 52px;
+    padding: 0 16px;
+    font-weight: 600;
+}
+
+.campo {
+    width: 150px;
+    height: 36px;
+    padding: 0 10px;
+    border: 1px solid var(--borde);
+    border-radius: 10px;
+    background: var(--fondo);
+    color: var(--texto);
+    font: inherit;
+    text-align: center;
+}
+
+
+/* Navegación */
 .nav {
     height: 76px;
     background: var(--superficie);
